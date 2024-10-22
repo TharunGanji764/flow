@@ -1,0 +1,34 @@
+POST http://localhost:3000/transaction
+Content-Type: application/json
+
+{
+    "type":"income",
+    "category":"salary",
+    "amount":52000,
+    "description":"February Salary"
+}
+
+
+###
+
+GET http://localhost:3000/tranasactions
+
+###
+
+GET http://localhost:3000/transactions/6717a12763664f9ff81910d9
+
+
+###
+PUT http://localhost:3000/transactions/6717a12763664f9ff81910d9
+Content-Type: application/json
+
+{
+    "description":"January Salary from 1 to 23"
+}
+
+###
+DELETE http://localhost:3000/transactions/6717a12763664f9ff81910d9
+
+###
+
+GET http://localhost:3000/summary
